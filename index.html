@@ -4,3 +4,24 @@ title: macrolet - hacking in the meta land
 ---
 
 This is a test.
+
+Expect real content soon.
+
+{% highlight erlang %}
+-compile(export_all).
+
+foo(_X) -> 42.
+
+quux() -> fun foo/1.
+{% endhighlight %}
+
+{% highlight scheme %}
+
+(defmacro compose
+  ((funs fold)
+   `(fn (x) (funcall ,fold (fn (f a) (funcall f a)) x ,funs)))
+  ((funs)
+   `(compose ,funs (fun lists foldr 3))))
+
+{% endhighlight %}
+
