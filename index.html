@@ -7,6 +7,18 @@ This is a test.
 
 Expect real content soon.
 
+<hr>
+Some *fake* posts:
+
+{% for post in site.posts limit:3 %}
+  <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+  {{post.content}}
+  <em>Posted on {{post.date | date_to_string}}.</em>
+{% endfor %}
+<hr>
+
+Below some code highlighting tests.
+
 {% highlight erlang %}
 -compile(export_all).
 
@@ -15,13 +27,21 @@ foo(_X) -> 42.
 quux() -> fun foo/1.
 {% endhighlight %}
 
-{% highlight scheme %}
+{% highlight cl %}
 
 (defmacro compose
-  ((funs fold)
+  ([funs fold]
    `(fn (x) (funcall ,fold (fn (f a) (funcall f a)) x ,funs)))
   ((funs)
    `(compose ,funs (fun lists foldr 3))))
 
-{% endhighlight %}
+;; defensive catcher
+(defmacro catch-when
+  ([errname 'catcharg catcharg 'ret subst 'call mod f . args]
+   `(try (call ,mod ,f ,@args)
+	 (catch ((tuple 'error ,errname [(tuple ,mod ,f ,catcharg) . _]) 
+		 ,subst))))
+  ([errname 'ret subst 'call . callargs]
+   `(catch-when ,errname catcharg _ ret ,subst call ,@callargs)))
 
+{% endhighlight %}
