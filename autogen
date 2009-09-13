@@ -1,0 +1,4 @@
+#!/bin/sh
+inotifywait -mq --format jekyll -e modify \
+  --exclude _site  . css _layouts _posts \
+|sh

@@ -1,0 +1,2 @@
+To have a nice hacking environment, run jekyll --server and ./autogen,
+then point a browser to 0:4000.
