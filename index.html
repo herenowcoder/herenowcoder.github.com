@@ -1,13 +1,13 @@
 ---
 layout: default
-title: macrolet - hacking in the meta land
+title: macrolet - hacking for the better
 ---
 
 This is a test.
 
 Expect real content soon.
 
-<hr>
+<div id="posts">
 Some *fake* posts:
 
 {% for post in site.posts limit:3 %}
@@ -15,5 +15,4 @@ Some *fake* posts:
   {{post.content}}
   <em>Posted on {{post.date | date_to_string}}.</em>
 {% endfor %}
-<hr>
-
+</div>
