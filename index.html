@@ -17,31 +17,3 @@ Some *fake* posts:
 {% endfor %}
 <hr>
 
-Below some code highlighting tests.
-
-{% highlight erlang %}
--compile(export_all).
-
-foo(_X) -> 42.
-
-quux() -> fun foo/1.
-{% endhighlight %}
-
-{% highlight cl %}
-
-(defmacro compose
-  ([funs fold]
-   `(fn (x) (funcall ,fold (fn (f a) (funcall f a)) x ,funs)))
-  ((funs)
-   `(compose ,funs (fun lists foldr 3))))
-
-;; defensive catcher
-(defmacro catch-when
-  ([errname 'catcharg catcharg 'ret subst 'call mod f . args]
-   `(try (call ,mod ,f ,@args)
-	 (catch ((tuple 'error ,errname [(tuple ,mod ,f ,catcharg) . _]) 
-		 ,subst))))
-  ([errname 'ret subst 'call . callargs]
-   `(catch-when ,errname catcharg _ ret ,subst call ,@callargs)))
-
-{% endhighlight %}

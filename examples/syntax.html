@@ -1,0 +1,66 @@
+---
+layout: default
+title: LFE syntax colorization at GitHub
+---
+
+Code highlighting tests for LFE using CL lexer.
+<p>
+First a small CSS modification to make builtin operators (like <code>defmacro</code>) more visible:
+
+{% highlight css %}
+-.highlight .nb { color: #0086B3 } /* Name.Builtin */
++.highlight .nb { color: #0040D0; font-weight: bold } /* Name.Builtin */
+{% endhighlight %}
+
+Here it goes:
+<div colorstyle="new">
+{% highlight cl %}
+(defmacro compose
+  ([funs fold]
+   `(lambda (x) (funcall ,fold (lambda (f a) (funcall f a)) x ,funs)))
+  ([funs]
+   `(compose ,funs (fun lists foldr 3))))
+;; ^^ this is cool except of square brackets which could be black as well
+
+(defmacro defmacro/f/1 
+  ([name arg . body]
+   `(defmacro ,name (x)
+      `(flet [(f ,',arg ,',@body)] (f ,x)))))
+;; ^^ same as before; also double unquote (,',symbol) doesn't look best
+
+(defmacro catch-when
+  ([errname 'catcharg catcharg 'ret subst 'call mod f . args]
+   `(try (call ,mod ,f ,@args)
+	 (catch ((tuple 'error ,errname [(tuple ,mod ,f ,catcharg) . _]) 
+		 ,subst))))
+  ([errname 'ret subst 'call . callargs]
+   `(catch-when ,errname catcharg _ ret ,subst call ,@callargs)))
+;; this is harder as 'subst' and 'mod' are treated as builtins 
+;; - they are in CL, but not in LFE; here they are just symbols
+
+{% endhighlight %}
+</div>
+
+And now original colorization.
+
+{% highlight cl %}
+(defmacro compose
+  ([funs fold]
+   `(lambda (x) (funcall ,fold (lambda (f a) (funcall f a)) x ,funs)))
+  ([funs]
+   `(compose ,funs (fun lists foldr 3))))
+
+(defmacro defmacro/f/1 
+  ([name arg . body]
+   `(defmacro ,name (x)
+      `(flet [(f ,',arg ,',@body)] (f ,x)))))
+
+(defmacro catch-when
+  ([errname 'catcharg catcharg 'ret subst 'call mod f . args]
+   `(try (call ,mod ,f ,@args)
+	 (catch ((tuple 'error ,errname [(tuple ,mod ,f ,catcharg) . _]) 
+		 ,subst))))
+  ([errname 'ret subst 'call . callargs]
+   `(catch-when ,errname catcharg _ ret ,subst call ,@callargs)))
+
+{% endhighlight %}
