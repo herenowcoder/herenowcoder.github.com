@@ -3,10 +3,12 @@ layout: default
 title: inthephase
 ---
 <ul>
-  {% for post in site.posts %}
-  <li>
-    <a href="{{post.url}}">{{post.title}}</a>
-    <hr>
+  {% for post in paginator.posts %}
+  <li class='grid_16'>
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p>
+      {{ post.excerpt }}
+    </p>
   </li>
   {% endfor %}
 </ul>
