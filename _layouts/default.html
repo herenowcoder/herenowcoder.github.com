@@ -12,30 +12,12 @@
   </head>
   <body>
     <div class='container_16'>
-      <div class='grid_16'> 
-        <div id="header">
-          <h1><a href="/">inthephase</a></h1>
-          <div class='header-summary'>
-            Articles on hacking, vibrant things, the beauty of creating and breaking the rules.
-          </div>
-        </div>
-      </div>
+      {% include header.html %}
       <div class='grid_16 index'>
         {{content}}
       </div>
       <div class='clear'></div>
-      <div class='grid_16'>
-        <p />
-        <div id="copyright">
-          ©<span style="font-size:80%"> 2010-2013 </span>
-        <a href="http://about.me/wojciech.kaczmarek">Wojtek Kaczmarek</a>.
-        Design by <span class='link'>Vibrant Crafts</span>,
-        <span class='link'>Elven Sparks &amp; Sounds</span>™.
-        <br>
-        <a href="http://validator.w3.org/check/referer">Valid</a>
-        Html5. Powered by awareness.
-        </div>
-      </div>
+      {% include copy.html %}
     </div>
   </body>
 </html>
