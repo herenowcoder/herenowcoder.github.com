@@ -44,7 +44,7 @@ h1 {
 
 }
 
-#header {
+.header {
     border-bottom: dashed 1px;
     margin-bottom: 1.6em;
 }
@@ -84,11 +84,11 @@ p {
     padding-left: 16px;
 }
 
-#copyright {
+.copyright {
     font:small-caps 15px normal; 
     text-align:center;
 }
 
-#post-pagination {
+.pagination {
     margin-top: 15px;
 }
