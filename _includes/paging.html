@@ -1,0 +1,49 @@
+<div id="post-pagination" class="pagination">
+    | Pages:
+  {% if paginator.previous_page %}
+    <span class="previous">
+      {% if paginator.previous_page == 1 %}
+        <a href="/">&larr;previous</a>
+      {% else %}
+        <a href="{{ paginator.previous_page_path }}">&larr;previous</a>
+      {% endif %}
+    </span>
+  {% else %}
+    <span class="previous disabled">previous</span>
+  {% endif %}
+
+  <span class="pages">
+    <span class="page">
+      {% if paginator.page == 1 %}
+        <span class="current-page">1</span>
+      {% else %}
+        <a href="/">&larr;1</a>
+      {% endif %}
+    </span>
+
+    {% for count in (2..paginator.total_pages) %}
+      <span class="page">
+        {% if count == paginator.page %}
+          <span class="current-page">{{ count }}</span>
+        {% else %}
+          {% if count < paginator.page %}
+            <a href="/page{{ count }}">&larr;{{ count }}</a>
+          {% else %}
+            <a href="/page{{ count }}">&rarr;{{ count }}</a>
+          {% endif %}
+        {% endif %}
+      </span>
+    {% endfor %}
+  </span>
+
+  {% if paginator.next_page %}
+    <span class="next">
+      <a href="{{ paginator.next_page_path }}">&rarr;next</a>
+    </span>
+  {% else %}
+    <span class="next disabled">
+      <span>next</span>
+    </span>
+  {% endif %}
+  |
+</div>

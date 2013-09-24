@@ -13,6 +13,11 @@ a:hover, a:active, .link:hover {
     text-decoration: underline; 
 }
 
+/* tools */
+.disabled {
+    display: none
+}
+
 /* fonts & sizes */
 body { 
 	    font-family: "Lucida Grande", "Segoe UI", Tahoma, Helvetica, Arial, sans-serif; 

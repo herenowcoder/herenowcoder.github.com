@@ -6,9 +6,12 @@ title: inthephase
   {% for post in paginator.posts %}
   <li class='grid_16' id="{{ post.url | remove: '/'}}">
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <div class='excerpt'>
+    <article class='excerpt'>
       {{ post.excerpt }}
-    </div>
+    </article>
   </li>
   {% endfor %}
 </ul>
+
+{% include paging.html %}
+<br/>
