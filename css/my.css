@@ -1,7 +1,11 @@
 /* colors */
 body {
-	background-color:#ddf;
+	background-color:#c0e0ff;
 	color:#003;
+}
+
+.highlight {
+    background-color: #ffffee;
 }
 
 a, a:visited, .link { 
@@ -70,6 +74,10 @@ p {
     line-height: 2em;
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+.highlight {
+    padding-left: 16px;
 }
 
 #copyright {
