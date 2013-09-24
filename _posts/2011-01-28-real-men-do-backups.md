@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Real men do backups before the data arrives
+title: Real men do backups... before the data arrives
 tags: sysadm
 ---
 
