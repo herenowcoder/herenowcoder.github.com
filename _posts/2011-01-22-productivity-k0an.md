@@ -19,4 +19,4 @@ understood the beautiful solution.
 I found this pearl in the Eloquent JavaScript book. Thanks Lambda the
 Ultimate for mentioning this excellent writing, btw!
 
-*Jan 21, 2011*
+*21 I 2011*

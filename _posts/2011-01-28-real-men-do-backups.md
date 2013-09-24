@@ -10,4 +10,5 @@ A good sysadmin has a backup infrastructure prepared & working up
 front, before real sensitive data is fed to his machines -- in the
 same way as TDD proponents write tests before the actual code is born.
 
-*Jan 28 2011*
+<!--eoe-->
+*28 I 2011*
