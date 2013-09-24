@@ -76,6 +76,10 @@ p {
     margin-bottom: 2em;
 }
 
+li {
+    border-bottom: solid 1px;
+}
+
 .highlight {
     padding-left: 16px;
 }
