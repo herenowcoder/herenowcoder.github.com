@@ -1,6 +1,8 @@
+lsi: true
 pygments: true
 permalink: /:categories/:title
 excerpt_separator: <!--eoe-->
 paginate: 4
 paginate_path: '/page:num/'
+timezone: Europe/Warsaw
 
