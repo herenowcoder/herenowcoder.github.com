@@ -1,6 +1,6 @@
 ---
 layout: post
-title: productivity k0an
+title: a k0an on performance
 ---
 
 A note to this little perfectionist in myself and everyone else,
@@ -12,10 +12,10 @@ difficult problem, but could not find the right approach. Fu-Tzu hit
 him on the back of his head and shouted ‘Type something!’ The student
 started writing an ugly solution. After he had finished, he suddenly
 understood the beautiful solution.
-<!--eoe-->
 
 ``:–))``
 
+<!--eoe-->
 I found this pearl in the Eloquent JavaScript book. Thanks Lambda the
 Ultimate for mentioning this excellent writing, btw!
 
