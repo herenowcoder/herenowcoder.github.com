@@ -17,7 +17,10 @@ understood the beautiful solution.
 ``:–))``
 
 <!--eoe-->
-I found this pearl in the Eloquent JavaScript book. Thanks Lambda the
-Ultimate for mentioning this excellent writing, btw!
+I found this pearl in the [Eloquent JavaScript][ejs] book. 
+Thanks [Lambda the Ultimate][LtU] for mentioning this excellent writing, by the way!
 
 *21 I 2011*
+
+[LtU]:   http://lambda-the-ultimate.org/
+[ejs]:   http://eloquentjavascript.net/
