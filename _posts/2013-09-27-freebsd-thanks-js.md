@@ -13,7 +13,7 @@ which will be now hosting [**the FreeBSD 20th Anniversary Party**][fbsd20y].
 
 ;-]
 
-Have fun folks!!
+Have fun folks there!!
 
 <!--eoe-->
 *IX 2013*
