@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "FreeBSD 'thanks' javasript ;-]"
+title: "FreeBSD 'thanks' javascript ;-]"
 tags: bsd
 ---
 
