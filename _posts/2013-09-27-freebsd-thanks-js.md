@@ -1,4 +1,4 @@
-B---
+---
 layout: post
 title: 'FreeBSD "thanks" javasript ;-]'
 tags: bsd
