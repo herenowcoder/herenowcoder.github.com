@@ -1,4 +1,4 @@
----
+B---
 layout: post
 title: 'FreeBSD "thanks" javasript ;-]'
 tags: bsd
@@ -15,6 +15,7 @@ which will be now hosting [**the FreeBSD 20th Anniversary Party**][fbsd20y].
 
 Have fun folks!!
 
+<!--eoe-->
 *IX 2013*
 
 [fbsd20y]: http://rsvp.ixsystems.com/
