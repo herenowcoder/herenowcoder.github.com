@@ -1,2 +1,2 @@
-To have a nice hacking environment, run jekyll serve --watch,
+To have a nice hacking environment, run jekyll serve --watch --drafts,
 then point a browser to 0:4000.
