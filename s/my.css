@@ -46,7 +46,6 @@ body {
 }
 
 h1 {
-    font-family: Arial, sans-serif;
     font-weight: bold;
     padding-bottom: 7px;
     text-transform: uppercase;
@@ -66,7 +65,6 @@ h1 {
 }
 
 h2 {
-    font-family: Arial, sans-serif;
     font-size: 1.5em;
     line-height: 1.333333em;
     margin-top: 1.6em;
@@ -74,7 +72,6 @@ h2 {
 }
 
 h3 {
-    font-family: Arial, sans-serif;
     font-size: 1.25em;
     line-height: 1.6em;
     margin-top: 1.333333em;
