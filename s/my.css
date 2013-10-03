@@ -128,4 +128,10 @@ p {
 
 .pagination {
     margin-top: 15px;
+    font-size: 90%;
+}
+
+.page, .previous, .next {
+    padding-left: 7px;
+    /*border: dashed 1px; /*dbg*/*/
 }

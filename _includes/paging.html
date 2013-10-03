@@ -15,7 +15,7 @@
   <span class="pages">
     <span class="page">
       {% if paginator.page == 1 %}
-        <span class="current-page">&loz;1</span>
+        <span class="current-page">&bull; 1</span>
       {% else %}
         <a href="/">&larr;1</a>
       {% endif %}
@@ -24,7 +24,7 @@
     {% for count in (2..paginator.total_pages) %}
       <span class="page">
         {% if count == paginator.page %}
-          <span class="current-page">&loz;{{ count }}</span>
+          <span class="current-page">&bull; {{ count }}</span>
         {% else %}
           {% if count < paginator.page %}
             <a href="/page{{ count }}">&larr;{{ count }}</a>
