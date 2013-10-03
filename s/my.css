@@ -29,6 +29,34 @@ a:hover, a:active, .link:hover {
     src: url("/f/SourceCodePro-Regular.otf") format("opentype");
 }
 
+@font-face {
+    font-family: SofiaProCondensedLt;
+    src: url('/f/SofiaProLiCond-webfont.eot');
+    src: 
+        url('/f/SofiaProLiCond-webfont.eot?#iefix') 
+            format('embedded-opentype'),
+        url('/f/SofiaProLiCond-webfont.woff') format('woff'),
+        url('/f/SofiaProLiCond-webfont.ttf') format('truetype'),
+        url('/f/SofiaProLiCond-webfont.svg#sofia_pro_light_condensedRg')
+            format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SofiaProLt;
+    src: url('/f/SofiaProLight-webfont.eot');
+    src: 
+        url('/f/SofiaProLight-webfont.eot?#iefix') 
+            format('embedded-opentype'),
+        url('/f/SofiaProLight-webfont.woff') format('woff'),
+        url('/f/SofiaProLight-webfont.ttf') format('truetype'),
+        url('/f/SofiaProLight-webfont.svg#sofia_pro_lightregular')
+            format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 code {
     font-family: SourceCodePro, Monospace;
      font-size: 15px;
@@ -36,7 +64,7 @@ code {
 }
 
 body { 
-	    font-family: "Lucida Grande", "Segoe UI", Tahoma, Helvetica, Arial, sans-serif; 
+    font-family: SofiaProLt, Helvetica, Arial, sans-serif; 
     font-size: 16px;
     line-height: 32px;
 }
