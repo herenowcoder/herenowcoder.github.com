@@ -59,7 +59,7 @@ a:hover, a:active, .link:hover {
 
 code {
     font-family: SourceCodePro, Monospace;
-    font-size: 15px;
+    font-size: 1;
     line-height: 1;
 }
 
@@ -67,6 +67,10 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1;
+}
+
+.indexed-post, .post-content {
+    font-size: 13px;
 }
 
 .container_12 {
@@ -119,6 +123,8 @@ p {
 
 .highlight {
     padding-left: 16px;
+    /*padding-top: 1px;*/
+    /*padding-bottom: 1px;*/
 }
 
 .copyright {
