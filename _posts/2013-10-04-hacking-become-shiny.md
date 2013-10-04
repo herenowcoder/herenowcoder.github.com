@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "hacking become: shiny."
-tags: smalltalk, web
+tags: smalltalk, composable web
 ---
 
 Continuing the richness of thoughts after more time spent with recently rediscovered **Smalltalk** I came up with the conclusion:
@@ -79,7 +79,9 @@ It was so easy and beautiful!
 
 I just monkey-patched one of the superclasses of the html elements - `WATagBrush` in this case - the topmost common thing that can be painted on the html canvas (the brush and the canvas, if you care for a little poetry - Seaside authors did for sure).  By the way, I think I may be the only Smalltalker using the term monkey-patching, well this is my Ruby habit -- in Smalltalk the detailed technique used is just writing a new method for the existing class in a separate package and it's done by putting this new method (message, in fact) in a protocol named as `*Your-Package`. Then all existing subclasses of such "patched" class have this new behaviour and also your code is in separate package, it's not messed with the  code of the original class, you can distribute it separately etc etc (there are no *files* with the source code in Smalltalk, really).
 
-Now some note for the ending -- although I haven't used Smalltalk for years and I'm only reminding it since few weeks, it was really quick to catch up things and learn what was described here. I landed with the piece of code above much faster than it took to write this article. Most important thing is that the little code above is part of my experiment of using composable ui components in web apps - meaning, the parts of controller & view are encapsulated into boxes which can be reused. This is the topic to write much more about. 
+Now some note for the ending -- although I haven't seriously used Smalltalk before and I'm only reminding it since few weeks, it was really quick to catch up things and learn what was described here. I landed with the piece of code above much faster than it took to write this article. Most important thing is that this little hack is a part of my experiment of using composable ui components in web apps - meaning, the parts of controller & view are encapsulated into boxes which can be reused. This is the topic to write much more about. 
+
+A last word: if you wonder why is this article titled like a Smalltalk statement, this will become: more clear in time.. ;)
 
 <!--eoe-->
 *IX 2013*
