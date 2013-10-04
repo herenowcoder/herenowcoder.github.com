@@ -60,13 +60,13 @@ a:hover, a:active, .link:hover {
 code {
     font-family: SourceCodePro, Monospace;
     font-size: 1;
-    line-height: 1;
+    /*line-height: 1;*/
 }
 
 body { 
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
-    line-height: 1;
+    line-height: 1em;
 }
 
 .indexed-post, .post-content {
@@ -118,6 +118,7 @@ p {
 }
 
 .indexed-post {
+    margin-bottom: 20px;
     border-bottom: solid 1px;
 }
 
@@ -135,9 +136,9 @@ p {
 .pagination {
     margin-top: 15px;
     font-size: 90%;
+    margin-bottom: 20px;
 }
 
 .page, .previous, .next {
     padding-left: 7px;
-    /*border: dashed 1px; /*dbg*/*/
 }
