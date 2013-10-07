@@ -132,10 +132,8 @@ is in separate package, it's not messed with the  code of the original class,
 you can distribute it separately etc etc (there are no *files* with the source
 code in Smalltalk, really).
 
-The code above is not perfect -- my aim is to make it as much clean and
-resembling the written language as possible; what could be more clear is the
-DOM-mutating jQuery code in the block passed as an arg to the `usingInit:` --
-this version seems so hackish..
+The code above is not perfect -- what could be more clear is the
+DOM-mutating jQuery code in the block passed as an arg to the `usingInit:`.
 
 Now some note for the ending -- although I haven't seriously used Smalltalk
 before and I'm only reminding it since few weeks, it was really quick to catch
