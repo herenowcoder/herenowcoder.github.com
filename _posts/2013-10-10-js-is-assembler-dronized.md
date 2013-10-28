@@ -10,3 +10,6 @@ Javascript was invented to be the web assembler, to bring the dynamism to the st
 Somebody hasn't really thought it well...
 
 Well I really would want to code assembler if it had a syntax like one! You don't put a coal miner in tuxedo when he's mining, do you? :)
+
+<!--eoe-->
+*X 2013*
