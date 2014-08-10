@@ -50,7 +50,7 @@ renderContentOn: html
 
 This code does lots of things:
 
-* gets random picture from my library of moon porn ;) plus an information of its background color,
+* gets random picture from my library of moon beauties plus an information of its background color,
 * emits an html tag containing this picture,
 * tells the DOM to first set the background of the whole html body to the same color as picture background,
 * tells the DOM to first make the picture invisible and then "emerge" it - make it fading in through the 4 seconds, using an jQuery effect.
