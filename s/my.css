@@ -8,14 +8,21 @@ body {
     background-color: #ffffee;
 }
 
-a, a:visited, .link { 
+
+a, a:visited, .link {
     color: #225;
-    text-decoration: none; 
+    text-decoration: none;
+}
+
+article p a {
+    border-bottom: 1px dotted !important;
 }
 
 a:hover, a:active, .link:hover { 
-    text-decoration: underline; 
+    text-decoration: underline;
+    border-bottom: none !important;
 }
+
 
 /* common */
 .disabled {
